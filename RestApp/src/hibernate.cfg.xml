@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+  <property name="hibernate.connection.url">jdbc:mysql://mysql.planetco.com.br/planetco</property>
+  <property name="hibernate.connection.username">planetco</property>
+  <property name="connection.password">123QWEasd</property>
+  <property name="connection.pool_size">1</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+  <property name="show_sql">true</property>
+  <property name="hbm2ddl.auto">update</property>
+  
+  <mapping resource="com/benpot/model/Client.hbm.xml"/>
+  <mapping resource="com/benpot/model/State.hbm.xml"/>
+  <mapping resource="com/benpot/model/Company.hbm.xml"/>
+  <mapping resource="com/benpot/model/Contract.hbm.xml"/>
+  <mapping resource="com/benpot/model/Payment.hbm.xml"/>
+  <mapping resource="com/benpot/model/Address.hbm.xml"/>
+  <mapping resource="com/benpot/model/Prospect.hbm.xml"/>
+  <mapping resource="com/benpot/model/CheckIn.hbm.xml"/>
+  
+ </session-factory>
+</hibernate-configuration>

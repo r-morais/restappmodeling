@@ -326,7 +326,7 @@ public class EmployeeImpl extends MinimalEObjectImpl.Container implements Employ
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EmployeeImpl() {
+	public EmployeeImpl() {
 		super();
 	}
 
