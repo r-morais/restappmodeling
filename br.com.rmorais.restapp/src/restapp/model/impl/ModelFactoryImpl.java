@@ -63,6 +63,7 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 			case ModelPackage.PRICE: return createPrice();
 			case ModelPackage.PURCHASE: return createPurchase();
 			case ModelPackage.PROVIDER: return createProvider();
+			case ModelPackage.PRODUCTS_PURCHASE: return createProductsPurchase();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -136,6 +137,16 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	public Provider createProvider() {
 		ProviderImpl provider = new ProviderImpl();
 		return provider;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProductsPurchase createProductsPurchase() {
+		ProductsPurchaseImpl productsPurchase = new ProductsPurchaseImpl();
+		return productsPurchase;
 	}
 
 	/**

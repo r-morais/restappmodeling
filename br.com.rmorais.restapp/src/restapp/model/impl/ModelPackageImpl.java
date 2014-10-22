@@ -15,6 +15,7 @@ import restapp.model.ModelFactory;
 import restapp.model.ModelPackage;
 import restapp.model.Price;
 import restapp.model.Product;
+import restapp.model.ProductsPurchase;
 import restapp.model.Provider;
 import restapp.model.Purchase;
 import restapp.model.User;
@@ -74,6 +75,13 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * @generated
 	 */
 	private EClass providerEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass productsPurchaseEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -546,6 +554,15 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getPurchase_NewEReference2() {
+		return (EReference)purchaseEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getProvider() {
 		return providerEClass;
 	}
@@ -602,6 +619,69 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 */
 	public EAttribute getProvider_Contact() {
 		return (EAttribute)providerEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProductsPurchase() {
+		return productsPurchaseEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getProductsPurchase_Quantity() {
+		return (EAttribute)productsPurchaseEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getProductsPurchase_UnityValue() {
+		return (EAttribute)productsPurchaseEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getProductsPurchase_UnityDiscount() {
+		return (EAttribute)productsPurchaseEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getProductsPurchase_UnityValueWithDiscount() {
+		return (EAttribute)productsPurchaseEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getProductsPurchase_NewEReference1() {
+		return (EReference)productsPurchaseEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getProductsPurchase_NewEReference2() {
+		return (EReference)productsPurchaseEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -682,6 +762,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		createEAttribute(purchaseEClass, PURCHASE__DISCOUNT);
 		createEAttribute(purchaseEClass, PURCHASE__TOTAL_WITH_DISCOUNT);
 		createEReference(purchaseEClass, PURCHASE__NEW_EREFERENCE1);
+		createEReference(purchaseEClass, PURCHASE__NEW_EREFERENCE2);
 
 		providerEClass = createEClass(PROVIDER);
 		createEAttribute(providerEClass, PROVIDER__ID);
@@ -690,6 +771,14 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		createEAttribute(providerEClass, PROVIDER__CNPJ);
 		createEAttribute(providerEClass, PROVIDER__ADDRESS);
 		createEAttribute(providerEClass, PROVIDER__CONTACT);
+
+		productsPurchaseEClass = createEClass(PRODUCTS_PURCHASE);
+		createEAttribute(productsPurchaseEClass, PRODUCTS_PURCHASE__QUANTITY);
+		createEAttribute(productsPurchaseEClass, PRODUCTS_PURCHASE__UNITY_VALUE);
+		createEAttribute(productsPurchaseEClass, PRODUCTS_PURCHASE__UNITY_DISCOUNT);
+		createEAttribute(productsPurchaseEClass, PRODUCTS_PURCHASE__UNITY_VALUE_WITH_DISCOUNT);
+		createEReference(productsPurchaseEClass, PRODUCTS_PURCHASE__NEW_EREFERENCE1);
+		createEReference(productsPurchaseEClass, PRODUCTS_PURCHASE__NEW_EREFERENCE2);
 	}
 
 	/**
@@ -772,6 +861,7 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		initEAttribute(getPurchase_Discount(), ecorePackage.getEInt(), "discount", null, 0, 1, Purchase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPurchase_TotalWithDiscount(), ecorePackage.getEDouble(), "totalWithDiscount", null, 0, 1, Purchase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPurchase_NewEReference1(), this.getProvider(), null, "newEReference1", null, 0, 1, Purchase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPurchase_NewEReference2(), this.getUser(), null, "newEReference2", null, 0, 1, Purchase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(providerEClass, Provider.class, "Provider", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getProvider_Id(), ecorePackage.getEInt(), "id", null, 0, 1, Provider.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -780,6 +870,14 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		initEAttribute(getProvider_CNPJ(), ecorePackage.getEString(), "CNPJ", null, 0, 1, Provider.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProvider_Address(), ecorePackage.getEString(), "Address", null, 0, 1, Provider.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProvider_Contact(), ecorePackage.getEString(), "contact", null, 0, 1, Provider.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(productsPurchaseEClass, ProductsPurchase.class, "ProductsPurchase", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getProductsPurchase_Quantity(), ecorePackage.getEInt(), "quantity", null, 0, 1, ProductsPurchase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProductsPurchase_UnityValue(), ecorePackage.getEDouble(), "unityValue", null, 0, 1, ProductsPurchase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProductsPurchase_UnityDiscount(), ecorePackage.getEInt(), "unityDiscount", null, 0, 1, ProductsPurchase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProductsPurchase_UnityValueWithDiscount(), ecorePackage.getEDouble(), "unityValueWithDiscount", null, 0, 1, ProductsPurchase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProductsPurchase_NewEReference1(), this.getPurchase(), null, "newEReference1", null, 0, 1, ProductsPurchase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProductsPurchase_NewEReference2(), this.getProduct(), null, "newEReference2", null, 0, 1, ProductsPurchase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

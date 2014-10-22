@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link restapp.model.Purchase#getDiscount <em>Discount</em>}</li>
  *   <li>{@link restapp.model.Purchase#getTotalWithDiscount <em>Total With Discount</em>}</li>
  *   <li>{@link restapp.model.Purchase#getNewEReference1 <em>New EReference1</em>}</li>
+ *   <li>{@link restapp.model.Purchase#getNewEReference2 <em>New EReference2</em>}</li>
  * </ul>
  * </p>
  *
@@ -183,5 +184,31 @@ public interface Purchase extends EObject {
 	 * @generated
 	 */
 	void setNewEReference1(Provider value);
+
+	/**
+	 * Returns the value of the '<em><b>New EReference2</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>New EReference2</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>New EReference2</em>' reference.
+	 * @see #setNewEReference2(User)
+	 * @see restapp.model.ModelPackage#getPurchase_NewEReference2()
+	 * @model
+	 * @generated
+	 */
+	User getNewEReference2();
+
+	/**
+	 * Sets the value of the '{@link restapp.model.Purchase#getNewEReference2 <em>New EReference2</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>New EReference2</em>' reference.
+	 * @see #getNewEReference2()
+	 * @generated
+	 */
+	void setNewEReference2(User value);
 
 } // Purchase

@@ -559,13 +559,22 @@ public interface ModelPackage extends EPackage {
 	int PURCHASE__NEW_EREFERENCE1 = 5;
 
 	/**
+	 * The feature id for the '<em><b>New EReference2</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PURCHASE__NEW_EREFERENCE2 = 6;
+
+	/**
 	 * The number of structural features of the '<em>Purchase</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PURCHASE_FEATURE_COUNT = 6;
+	int PURCHASE_FEATURE_COUNT = 7;
 
 	/**
 	 * The number of operations of the '<em>Purchase</em>' class.
@@ -657,6 +666,89 @@ public interface ModelPackage extends EPackage {
 	 * @ordered
 	 */
 	int PROVIDER_OPERATION_COUNT = 0;
+
+
+	/**
+	 * The meta object id for the '{@link restapp.model.impl.ProductsPurchaseImpl <em>Products Purchase</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see restapp.model.impl.ProductsPurchaseImpl
+	 * @see restapp.model.impl.ModelPackageImpl#getProductsPurchase()
+	 * @generated
+	 */
+	int PRODUCTS_PURCHASE = 7;
+
+	/**
+	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTS_PURCHASE__QUANTITY = 0;
+
+	/**
+	 * The feature id for the '<em><b>Unity Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTS_PURCHASE__UNITY_VALUE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Unity Discount</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTS_PURCHASE__UNITY_DISCOUNT = 2;
+
+	/**
+	 * The feature id for the '<em><b>Unity Value With Discount</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTS_PURCHASE__UNITY_VALUE_WITH_DISCOUNT = 3;
+
+	/**
+	 * The feature id for the '<em><b>New EReference1</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTS_PURCHASE__NEW_EREFERENCE1 = 4;
+
+	/**
+	 * The feature id for the '<em><b>New EReference2</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTS_PURCHASE__NEW_EREFERENCE2 = 5;
+
+	/**
+	 * The number of structural features of the '<em>Products Purchase</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTS_PURCHASE_FEATURE_COUNT = 6;
+
+	/**
+	 * The number of operations of the '<em>Products Purchase</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTS_PURCHASE_OPERATION_COUNT = 0;
 
 
 	/**
@@ -1149,6 +1241,17 @@ public interface ModelPackage extends EPackage {
 	EReference getPurchase_NewEReference1();
 
 	/**
+	 * Returns the meta object for the reference '{@link restapp.model.Purchase#getNewEReference2 <em>New EReference2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>New EReference2</em>'.
+	 * @see restapp.model.Purchase#getNewEReference2()
+	 * @see #getPurchase()
+	 * @generated
+	 */
+	EReference getPurchase_NewEReference2();
+
+	/**
 	 * Returns the meta object for class '{@link restapp.model.Provider <em>Provider</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1223,6 +1326,82 @@ public interface ModelPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getProvider_Contact();
+
+	/**
+	 * Returns the meta object for class '{@link restapp.model.ProductsPurchase <em>Products Purchase</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Products Purchase</em>'.
+	 * @see restapp.model.ProductsPurchase
+	 * @generated
+	 */
+	EClass getProductsPurchase();
+
+	/**
+	 * Returns the meta object for the attribute '{@link restapp.model.ProductsPurchase#getQuantity <em>Quantity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Quantity</em>'.
+	 * @see restapp.model.ProductsPurchase#getQuantity()
+	 * @see #getProductsPurchase()
+	 * @generated
+	 */
+	EAttribute getProductsPurchase_Quantity();
+
+	/**
+	 * Returns the meta object for the attribute '{@link restapp.model.ProductsPurchase#getUnityValue <em>Unity Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Unity Value</em>'.
+	 * @see restapp.model.ProductsPurchase#getUnityValue()
+	 * @see #getProductsPurchase()
+	 * @generated
+	 */
+	EAttribute getProductsPurchase_UnityValue();
+
+	/**
+	 * Returns the meta object for the attribute '{@link restapp.model.ProductsPurchase#getUnityDiscount <em>Unity Discount</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Unity Discount</em>'.
+	 * @see restapp.model.ProductsPurchase#getUnityDiscount()
+	 * @see #getProductsPurchase()
+	 * @generated
+	 */
+	EAttribute getProductsPurchase_UnityDiscount();
+
+	/**
+	 * Returns the meta object for the attribute '{@link restapp.model.ProductsPurchase#getUnityValueWithDiscount <em>Unity Value With Discount</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Unity Value With Discount</em>'.
+	 * @see restapp.model.ProductsPurchase#getUnityValueWithDiscount()
+	 * @see #getProductsPurchase()
+	 * @generated
+	 */
+	EAttribute getProductsPurchase_UnityValueWithDiscount();
+
+	/**
+	 * Returns the meta object for the reference '{@link restapp.model.ProductsPurchase#getNewEReference1 <em>New EReference1</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>New EReference1</em>'.
+	 * @see restapp.model.ProductsPurchase#getNewEReference1()
+	 * @see #getProductsPurchase()
+	 * @generated
+	 */
+	EReference getProductsPurchase_NewEReference1();
+
+	/**
+	 * Returns the meta object for the reference '{@link restapp.model.ProductsPurchase#getNewEReference2 <em>New EReference2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>New EReference2</em>'.
+	 * @see restapp.model.ProductsPurchase#getNewEReference2()
+	 * @see #getProductsPurchase()
+	 * @generated
+	 */
+	EReference getProductsPurchase_NewEReference2();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1620,6 +1799,14 @@ public interface ModelPackage extends EPackage {
 		EReference PURCHASE__NEW_EREFERENCE1 = eINSTANCE.getPurchase_NewEReference1();
 
 		/**
+		 * The meta object literal for the '<em><b>New EReference2</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PURCHASE__NEW_EREFERENCE2 = eINSTANCE.getPurchase_NewEReference2();
+
+		/**
 		 * The meta object literal for the '{@link restapp.model.impl.ProviderImpl <em>Provider</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1676,6 +1863,64 @@ public interface ModelPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PROVIDER__CONTACT = eINSTANCE.getProvider_Contact();
+
+		/**
+		 * The meta object literal for the '{@link restapp.model.impl.ProductsPurchaseImpl <em>Products Purchase</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see restapp.model.impl.ProductsPurchaseImpl
+		 * @see restapp.model.impl.ModelPackageImpl#getProductsPurchase()
+		 * @generated
+		 */
+		EClass PRODUCTS_PURCHASE = eINSTANCE.getProductsPurchase();
+
+		/**
+		 * The meta object literal for the '<em><b>Quantity</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCTS_PURCHASE__QUANTITY = eINSTANCE.getProductsPurchase_Quantity();
+
+		/**
+		 * The meta object literal for the '<em><b>Unity Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCTS_PURCHASE__UNITY_VALUE = eINSTANCE.getProductsPurchase_UnityValue();
+
+		/**
+		 * The meta object literal for the '<em><b>Unity Discount</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCTS_PURCHASE__UNITY_DISCOUNT = eINSTANCE.getProductsPurchase_UnityDiscount();
+
+		/**
+		 * The meta object literal for the '<em><b>Unity Value With Discount</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCTS_PURCHASE__UNITY_VALUE_WITH_DISCOUNT = eINSTANCE.getProductsPurchase_UnityValueWithDiscount();
+
+		/**
+		 * The meta object literal for the '<em><b>New EReference1</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCTS_PURCHASE__NEW_EREFERENCE1 = eINSTANCE.getProductsPurchase_NewEReference1();
+
+		/**
+		 * The meta object literal for the '<em><b>New EReference2</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCTS_PURCHASE__NEW_EREFERENCE2 = eINSTANCE.getProductsPurchase_NewEReference2();
 
 	}
 

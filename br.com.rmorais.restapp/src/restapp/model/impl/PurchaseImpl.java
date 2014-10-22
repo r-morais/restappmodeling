@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import restapp.model.ModelPackage;
 import restapp.model.Provider;
 import restapp.model.Purchase;
+import restapp.model.User;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,6 +30,7 @@ import restapp.model.Purchase;
  *   <li>{@link restapp.model.impl.PurchaseImpl#getDiscount <em>Discount</em>}</li>
  *   <li>{@link restapp.model.impl.PurchaseImpl#getTotalWithDiscount <em>Total With Discount</em>}</li>
  *   <li>{@link restapp.model.impl.PurchaseImpl#getNewEReference1 <em>New EReference1</em>}</li>
+ *   <li>{@link restapp.model.impl.PurchaseImpl#getNewEReference2 <em>New EReference2</em>}</li>
  * </ul>
  * </p>
  *
@@ -144,6 +146,16 @@ public class PurchaseImpl extends MinimalEObjectImpl.Container implements Purcha
 	 * @ordered
 	 */
 	protected Provider newEReference1;
+
+	/**
+	 * The cached value of the '{@link #getNewEReference2() <em>New EReference2</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNewEReference2()
+	 * @generated
+	 * @ordered
+	 */
+	protected User newEReference2;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -312,6 +324,44 @@ public class PurchaseImpl extends MinimalEObjectImpl.Container implements Purcha
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public User getNewEReference2() {
+		if (newEReference2 != null && newEReference2.eIsProxy()) {
+			InternalEObject oldNewEReference2 = (InternalEObject)newEReference2;
+			newEReference2 = (User)eResolveProxy(oldNewEReference2);
+			if (newEReference2 != oldNewEReference2) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, ModelPackage.PURCHASE__NEW_EREFERENCE2, oldNewEReference2, newEReference2));
+			}
+		}
+		return newEReference2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public User basicGetNewEReference2() {
+		return newEReference2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setNewEReference2(User newNewEReference2) {
+		User oldNewEReference2 = newEReference2;
+		newEReference2 = newNewEReference2;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ModelPackage.PURCHASE__NEW_EREFERENCE2, oldNewEReference2, newEReference2));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -328,6 +378,9 @@ public class PurchaseImpl extends MinimalEObjectImpl.Container implements Purcha
 			case ModelPackage.PURCHASE__NEW_EREFERENCE1:
 				if (resolve) return getNewEReference1();
 				return basicGetNewEReference1();
+			case ModelPackage.PURCHASE__NEW_EREFERENCE2:
+				if (resolve) return getNewEReference2();
+				return basicGetNewEReference2();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -357,6 +410,9 @@ public class PurchaseImpl extends MinimalEObjectImpl.Container implements Purcha
 				return;
 			case ModelPackage.PURCHASE__NEW_EREFERENCE1:
 				setNewEReference1((Provider)newValue);
+				return;
+			case ModelPackage.PURCHASE__NEW_EREFERENCE2:
+				setNewEReference2((User)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -388,6 +444,9 @@ public class PurchaseImpl extends MinimalEObjectImpl.Container implements Purcha
 			case ModelPackage.PURCHASE__NEW_EREFERENCE1:
 				setNewEReference1((Provider)null);
 				return;
+			case ModelPackage.PURCHASE__NEW_EREFERENCE2:
+				setNewEReference2((User)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -412,6 +471,8 @@ public class PurchaseImpl extends MinimalEObjectImpl.Container implements Purcha
 				return totalWithDiscount != TOTAL_WITH_DISCOUNT_EDEFAULT;
 			case ModelPackage.PURCHASE__NEW_EREFERENCE1:
 				return newEReference1 != null;
+			case ModelPackage.PURCHASE__NEW_EREFERENCE2:
+				return newEReference2 != null;
 		}
 		return super.eIsSet(featureID);
 	}
