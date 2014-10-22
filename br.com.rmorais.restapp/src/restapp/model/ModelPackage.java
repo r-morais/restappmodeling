@@ -752,6 +752,235 @@ public interface ModelPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link restapp.model.impl.PhysicalCardImpl <em>Physical Card</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see restapp.model.impl.PhysicalCardImpl
+	 * @see restapp.model.impl.ModelPackageImpl#getPhysicalCard()
+	 * @generated
+	 */
+	int PHYSICAL_CARD = 8;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PHYSICAL_CARD__ID = 0;
+
+	/**
+	 * The feature id for the '<em><b>Number</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PHYSICAL_CARD__NUMBER = 1;
+
+	/**
+	 * The feature id for the '<em><b>Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PHYSICAL_CARD__STATUS = 2;
+
+	/**
+	 * The number of structural features of the '<em>Physical Card</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PHYSICAL_CARD_FEATURE_COUNT = 3;
+
+	/**
+	 * The number of operations of the '<em>Physical Card</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PHYSICAL_CARD_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link restapp.model.impl.CardImpl <em>Card</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see restapp.model.impl.CardImpl
+	 * @see restapp.model.impl.ModelPackageImpl#getCard()
+	 * @generated
+	 */
+	int CARD = 9;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CARD__ID = 0;
+
+	/**
+	 * The feature id for the '<em><b>Sell Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CARD__SELL_DATE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Total Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CARD__TOTAL_VALUE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Discount</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CARD__DISCOUNT = 3;
+
+	/**
+	 * The feature id for the '<em><b>Total Value With Discount</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CARD__TOTAL_VALUE_WITH_DISCOUNT = 4;
+
+	/**
+	 * The feature id for the '<em><b>Payed Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CARD__PAYED_VALUE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Change</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CARD__CHANGE = 6;
+
+	/**
+	 * The feature id for the '<em><b>New EReference1</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CARD__NEW_EREFERENCE1 = 7;
+
+	/**
+	 * The number of structural features of the '<em>Card</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CARD_FEATURE_COUNT = 8;
+
+	/**
+	 * The number of operations of the '<em>Card</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CARD_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link restapp.model.impl.ProductsCardImpl <em>Products Card</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see restapp.model.impl.ProductsCardImpl
+	 * @see restapp.model.impl.ModelPackageImpl#getProductsCard()
+	 * @generated
+	 */
+	int PRODUCTS_CARD = 10;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTS_CARD__ID = 0;
+
+	/**
+	 * The feature id for the '<em><b>New EReference1</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTS_CARD__NEW_EREFERENCE1 = 1;
+
+	/**
+	 * The feature id for the '<em><b>New EReference2</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTS_CARD__NEW_EREFERENCE2 = 2;
+
+	/**
+	 * The feature id for the '<em><b>New EReference3</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTS_CARD__NEW_EREFERENCE3 = 3;
+
+	/**
+	 * The feature id for the '<em><b>Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTS_CARD__DATE = 4;
+
+	/**
+	 * The number of structural features of the '<em>Products Card</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTS_CARD_FEATURE_COUNT = 5;
+
+	/**
+	 * The number of operations of the '<em>Products Card</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCTS_CARD_OPERATION_COUNT = 0;
+
+
+	/**
 	 * Returns the meta object for class '{@link restapp.model.Employee <em>Employee</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1404,6 +1633,212 @@ public interface ModelPackage extends EPackage {
 	EReference getProductsPurchase_NewEReference2();
 
 	/**
+	 * Returns the meta object for class '{@link restapp.model.PhysicalCard <em>Physical Card</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Physical Card</em>'.
+	 * @see restapp.model.PhysicalCard
+	 * @generated
+	 */
+	EClass getPhysicalCard();
+
+	/**
+	 * Returns the meta object for the attribute '{@link restapp.model.PhysicalCard#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see restapp.model.PhysicalCard#getId()
+	 * @see #getPhysicalCard()
+	 * @generated
+	 */
+	EAttribute getPhysicalCard_Id();
+
+	/**
+	 * Returns the meta object for the attribute '{@link restapp.model.PhysicalCard#getNumber <em>Number</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Number</em>'.
+	 * @see restapp.model.PhysicalCard#getNumber()
+	 * @see #getPhysicalCard()
+	 * @generated
+	 */
+	EAttribute getPhysicalCard_Number();
+
+	/**
+	 * Returns the meta object for the attribute '{@link restapp.model.PhysicalCard#getStatus <em>Status</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Status</em>'.
+	 * @see restapp.model.PhysicalCard#getStatus()
+	 * @see #getPhysicalCard()
+	 * @generated
+	 */
+	EAttribute getPhysicalCard_Status();
+
+	/**
+	 * Returns the meta object for class '{@link restapp.model.Card <em>Card</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Card</em>'.
+	 * @see restapp.model.Card
+	 * @generated
+	 */
+	EClass getCard();
+
+	/**
+	 * Returns the meta object for the attribute '{@link restapp.model.Card#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see restapp.model.Card#getId()
+	 * @see #getCard()
+	 * @generated
+	 */
+	EAttribute getCard_Id();
+
+	/**
+	 * Returns the meta object for the attribute '{@link restapp.model.Card#getSellDate <em>Sell Date</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sell Date</em>'.
+	 * @see restapp.model.Card#getSellDate()
+	 * @see #getCard()
+	 * @generated
+	 */
+	EAttribute getCard_SellDate();
+
+	/**
+	 * Returns the meta object for the attribute '{@link restapp.model.Card#getTotalValue <em>Total Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Total Value</em>'.
+	 * @see restapp.model.Card#getTotalValue()
+	 * @see #getCard()
+	 * @generated
+	 */
+	EAttribute getCard_TotalValue();
+
+	/**
+	 * Returns the meta object for the attribute '{@link restapp.model.Card#getDiscount <em>Discount</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Discount</em>'.
+	 * @see restapp.model.Card#getDiscount()
+	 * @see #getCard()
+	 * @generated
+	 */
+	EAttribute getCard_Discount();
+
+	/**
+	 * Returns the meta object for the attribute '{@link restapp.model.Card#getTotalValueWithDiscount <em>Total Value With Discount</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Total Value With Discount</em>'.
+	 * @see restapp.model.Card#getTotalValueWithDiscount()
+	 * @see #getCard()
+	 * @generated
+	 */
+	EAttribute getCard_TotalValueWithDiscount();
+
+	/**
+	 * Returns the meta object for the attribute '{@link restapp.model.Card#getPayedValue <em>Payed Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Payed Value</em>'.
+	 * @see restapp.model.Card#getPayedValue()
+	 * @see #getCard()
+	 * @generated
+	 */
+	EAttribute getCard_PayedValue();
+
+	/**
+	 * Returns the meta object for the attribute '{@link restapp.model.Card#getChange <em>Change</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Change</em>'.
+	 * @see restapp.model.Card#getChange()
+	 * @see #getCard()
+	 * @generated
+	 */
+	EAttribute getCard_Change();
+
+	/**
+	 * Returns the meta object for the reference '{@link restapp.model.Card#getNewEReference1 <em>New EReference1</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>New EReference1</em>'.
+	 * @see restapp.model.Card#getNewEReference1()
+	 * @see #getCard()
+	 * @generated
+	 */
+	EReference getCard_NewEReference1();
+
+	/**
+	 * Returns the meta object for class '{@link restapp.model.ProductsCard <em>Products Card</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Products Card</em>'.
+	 * @see restapp.model.ProductsCard
+	 * @generated
+	 */
+	EClass getProductsCard();
+
+	/**
+	 * Returns the meta object for the attribute '{@link restapp.model.ProductsCard#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see restapp.model.ProductsCard#getId()
+	 * @see #getProductsCard()
+	 * @generated
+	 */
+	EAttribute getProductsCard_Id();
+
+	/**
+	 * Returns the meta object for the reference '{@link restapp.model.ProductsCard#getNewEReference1 <em>New EReference1</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>New EReference1</em>'.
+	 * @see restapp.model.ProductsCard#getNewEReference1()
+	 * @see #getProductsCard()
+	 * @generated
+	 */
+	EReference getProductsCard_NewEReference1();
+
+	/**
+	 * Returns the meta object for the reference '{@link restapp.model.ProductsCard#getNewEReference2 <em>New EReference2</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>New EReference2</em>'.
+	 * @see restapp.model.ProductsCard#getNewEReference2()
+	 * @see #getProductsCard()
+	 * @generated
+	 */
+	EReference getProductsCard_NewEReference2();
+
+	/**
+	 * Returns the meta object for the reference '{@link restapp.model.ProductsCard#getNewEReference3 <em>New EReference3</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>New EReference3</em>'.
+	 * @see restapp.model.ProductsCard#getNewEReference3()
+	 * @see #getProductsCard()
+	 * @generated
+	 */
+	EReference getProductsCard_NewEReference3();
+
+	/**
+	 * Returns the meta object for the attribute '{@link restapp.model.ProductsCard#getDate <em>Date</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Date</em>'.
+	 * @see restapp.model.ProductsCard#getDate()
+	 * @see #getProductsCard()
+	 * @generated
+	 */
+	EAttribute getProductsCard_Date();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1921,6 +2356,164 @@ public interface ModelPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PRODUCTS_PURCHASE__NEW_EREFERENCE2 = eINSTANCE.getProductsPurchase_NewEReference2();
+
+		/**
+		 * The meta object literal for the '{@link restapp.model.impl.PhysicalCardImpl <em>Physical Card</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see restapp.model.impl.PhysicalCardImpl
+		 * @see restapp.model.impl.ModelPackageImpl#getPhysicalCard()
+		 * @generated
+		 */
+		EClass PHYSICAL_CARD = eINSTANCE.getPhysicalCard();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PHYSICAL_CARD__ID = eINSTANCE.getPhysicalCard_Id();
+
+		/**
+		 * The meta object literal for the '<em><b>Number</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PHYSICAL_CARD__NUMBER = eINSTANCE.getPhysicalCard_Number();
+
+		/**
+		 * The meta object literal for the '<em><b>Status</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PHYSICAL_CARD__STATUS = eINSTANCE.getPhysicalCard_Status();
+
+		/**
+		 * The meta object literal for the '{@link restapp.model.impl.CardImpl <em>Card</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see restapp.model.impl.CardImpl
+		 * @see restapp.model.impl.ModelPackageImpl#getCard()
+		 * @generated
+		 */
+		EClass CARD = eINSTANCE.getCard();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CARD__ID = eINSTANCE.getCard_Id();
+
+		/**
+		 * The meta object literal for the '<em><b>Sell Date</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CARD__SELL_DATE = eINSTANCE.getCard_SellDate();
+
+		/**
+		 * The meta object literal for the '<em><b>Total Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CARD__TOTAL_VALUE = eINSTANCE.getCard_TotalValue();
+
+		/**
+		 * The meta object literal for the '<em><b>Discount</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CARD__DISCOUNT = eINSTANCE.getCard_Discount();
+
+		/**
+		 * The meta object literal for the '<em><b>Total Value With Discount</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CARD__TOTAL_VALUE_WITH_DISCOUNT = eINSTANCE.getCard_TotalValueWithDiscount();
+
+		/**
+		 * The meta object literal for the '<em><b>Payed Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CARD__PAYED_VALUE = eINSTANCE.getCard_PayedValue();
+
+		/**
+		 * The meta object literal for the '<em><b>Change</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CARD__CHANGE = eINSTANCE.getCard_Change();
+
+		/**
+		 * The meta object literal for the '<em><b>New EReference1</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CARD__NEW_EREFERENCE1 = eINSTANCE.getCard_NewEReference1();
+
+		/**
+		 * The meta object literal for the '{@link restapp.model.impl.ProductsCardImpl <em>Products Card</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see restapp.model.impl.ProductsCardImpl
+		 * @see restapp.model.impl.ModelPackageImpl#getProductsCard()
+		 * @generated
+		 */
+		EClass PRODUCTS_CARD = eINSTANCE.getProductsCard();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCTS_CARD__ID = eINSTANCE.getProductsCard_Id();
+
+		/**
+		 * The meta object literal for the '<em><b>New EReference1</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCTS_CARD__NEW_EREFERENCE1 = eINSTANCE.getProductsCard_NewEReference1();
+
+		/**
+		 * The meta object literal for the '<em><b>New EReference2</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCTS_CARD__NEW_EREFERENCE2 = eINSTANCE.getProductsCard_NewEReference2();
+
+		/**
+		 * The meta object literal for the '<em><b>New EReference3</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCTS_CARD__NEW_EREFERENCE3 = eINSTANCE.getProductsCard_NewEReference3();
+
+		/**
+		 * The meta object literal for the '<em><b>Date</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCTS_CARD__DATE = eINSTANCE.getProductsCard_Date();
 
 	}
 

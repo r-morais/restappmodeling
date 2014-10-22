@@ -100,6 +100,18 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 				return createProductsPurchaseAdapter();
 			}
 			@Override
+			public Adapter casePhysicalCard(PhysicalCard object) {
+				return createPhysicalCardAdapter();
+			}
+			@Override
+			public Adapter caseCard(Card object) {
+				return createCardAdapter();
+			}
+			@Override
+			public Adapter caseProductsCard(ProductsCard object) {
+				return createProductsCardAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -228,6 +240,48 @@ public class ModelAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createProductsPurchaseAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link restapp.model.PhysicalCard <em>Physical Card</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see restapp.model.PhysicalCard
+	 * @generated
+	 */
+	public Adapter createPhysicalCardAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link restapp.model.Card <em>Card</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see restapp.model.Card
+	 * @generated
+	 */
+	public Adapter createCardAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link restapp.model.ProductsCard <em>Products Card</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see restapp.model.ProductsCard
+	 * @generated
+	 */
+	public Adapter createProductsCardAdapter() {
 		return null;
 	}
 

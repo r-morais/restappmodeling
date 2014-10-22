@@ -64,6 +64,9 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 			case ModelPackage.PURCHASE: return createPurchase();
 			case ModelPackage.PROVIDER: return createProvider();
 			case ModelPackage.PRODUCTS_PURCHASE: return createProductsPurchase();
+			case ModelPackage.PHYSICAL_CARD: return createPhysicalCard();
+			case ModelPackage.CARD: return createCard();
+			case ModelPackage.PRODUCTS_CARD: return createProductsCard();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -147,6 +150,36 @@ public class ModelFactoryImpl extends EFactoryImpl implements ModelFactory {
 	public ProductsPurchase createProductsPurchase() {
 		ProductsPurchaseImpl productsPurchase = new ProductsPurchaseImpl();
 		return productsPurchase;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PhysicalCard createPhysicalCard() {
+		PhysicalCardImpl physicalCard = new PhysicalCardImpl();
+		return physicalCard;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Card createCard() {
+		CardImpl card = new CardImpl();
+		return card;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProductsCard createProductsCard() {
+		ProductsCardImpl productsCard = new ProductsCardImpl();
+		return productsCard;
 	}
 
 	/**

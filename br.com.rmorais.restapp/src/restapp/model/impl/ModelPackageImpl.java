@@ -9,12 +9,15 @@ import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
+import restapp.model.Card;
 import restapp.model.Category;
 import restapp.model.Employee;
 import restapp.model.ModelFactory;
 import restapp.model.ModelPackage;
+import restapp.model.PhysicalCard;
 import restapp.model.Price;
 import restapp.model.Product;
+import restapp.model.ProductsCard;
 import restapp.model.ProductsPurchase;
 import restapp.model.Provider;
 import restapp.model.Purchase;
@@ -82,6 +85,27 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * @generated
 	 */
 	private EClass productsPurchaseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass physicalCardEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass cardEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass productsCardEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -689,6 +713,177 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getPhysicalCard() {
+		return physicalCardEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPhysicalCard_Id() {
+		return (EAttribute)physicalCardEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPhysicalCard_Number() {
+		return (EAttribute)physicalCardEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPhysicalCard_Status() {
+		return (EAttribute)physicalCardEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCard() {
+		return cardEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCard_Id() {
+		return (EAttribute)cardEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCard_SellDate() {
+		return (EAttribute)cardEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCard_TotalValue() {
+		return (EAttribute)cardEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCard_Discount() {
+		return (EAttribute)cardEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCard_TotalValueWithDiscount() {
+		return (EAttribute)cardEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCard_PayedValue() {
+		return (EAttribute)cardEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getCard_Change() {
+		return (EAttribute)cardEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getCard_NewEReference1() {
+		return (EReference)cardEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getProductsCard() {
+		return productsCardEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getProductsCard_Id() {
+		return (EAttribute)productsCardEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getProductsCard_NewEReference1() {
+		return (EReference)productsCardEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getProductsCard_NewEReference2() {
+		return (EReference)productsCardEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getProductsCard_NewEReference3() {
+		return (EReference)productsCardEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getProductsCard_Date() {
+		return (EAttribute)productsCardEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ModelFactory getModelFactory() {
 		return (ModelFactory)getEFactoryInstance();
 	}
@@ -779,6 +974,28 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		createEAttribute(productsPurchaseEClass, PRODUCTS_PURCHASE__UNITY_VALUE_WITH_DISCOUNT);
 		createEReference(productsPurchaseEClass, PRODUCTS_PURCHASE__NEW_EREFERENCE1);
 		createEReference(productsPurchaseEClass, PRODUCTS_PURCHASE__NEW_EREFERENCE2);
+
+		physicalCardEClass = createEClass(PHYSICAL_CARD);
+		createEAttribute(physicalCardEClass, PHYSICAL_CARD__ID);
+		createEAttribute(physicalCardEClass, PHYSICAL_CARD__NUMBER);
+		createEAttribute(physicalCardEClass, PHYSICAL_CARD__STATUS);
+
+		cardEClass = createEClass(CARD);
+		createEAttribute(cardEClass, CARD__ID);
+		createEAttribute(cardEClass, CARD__SELL_DATE);
+		createEAttribute(cardEClass, CARD__TOTAL_VALUE);
+		createEAttribute(cardEClass, CARD__DISCOUNT);
+		createEAttribute(cardEClass, CARD__TOTAL_VALUE_WITH_DISCOUNT);
+		createEAttribute(cardEClass, CARD__PAYED_VALUE);
+		createEAttribute(cardEClass, CARD__CHANGE);
+		createEReference(cardEClass, CARD__NEW_EREFERENCE1);
+
+		productsCardEClass = createEClass(PRODUCTS_CARD);
+		createEAttribute(productsCardEClass, PRODUCTS_CARD__ID);
+		createEReference(productsCardEClass, PRODUCTS_CARD__NEW_EREFERENCE1);
+		createEReference(productsCardEClass, PRODUCTS_CARD__NEW_EREFERENCE2);
+		createEReference(productsCardEClass, PRODUCTS_CARD__NEW_EREFERENCE3);
+		createEAttribute(productsCardEClass, PRODUCTS_CARD__DATE);
 	}
 
 	/**
@@ -878,6 +1095,28 @@ public class ModelPackageImpl extends EPackageImpl implements ModelPackage {
 		initEAttribute(getProductsPurchase_UnityValueWithDiscount(), ecorePackage.getEDouble(), "unityValueWithDiscount", null, 0, 1, ProductsPurchase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductsPurchase_NewEReference1(), this.getPurchase(), null, "newEReference1", null, 0, 1, ProductsPurchase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductsPurchase_NewEReference2(), this.getProduct(), null, "newEReference2", null, 0, 1, ProductsPurchase.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(physicalCardEClass, PhysicalCard.class, "PhysicalCard", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getPhysicalCard_Id(), ecorePackage.getEInt(), "id", null, 0, 1, PhysicalCard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPhysicalCard_Number(), ecorePackage.getEInt(), "number", null, 0, 1, PhysicalCard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPhysicalCard_Status(), ecorePackage.getEInt(), "status", null, 0, 1, PhysicalCard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(cardEClass, Card.class, "Card", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCard_Id(), ecorePackage.getEInt(), "id", null, 0, 1, Card.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCard_SellDate(), ecorePackage.getEDate(), "sellDate", null, 0, 1, Card.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCard_TotalValue(), ecorePackage.getEDouble(), "totalValue", null, 0, 1, Card.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCard_Discount(), ecorePackage.getEInt(), "discount", null, 0, 1, Card.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCard_TotalValueWithDiscount(), ecorePackage.getEDouble(), "totalValueWithDiscount", null, 0, 1, Card.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCard_PayedValue(), ecorePackage.getEDouble(), "payedValue", null, 0, 1, Card.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCard_Change(), ecorePackage.getEDouble(), "change", null, 0, 1, Card.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCard_NewEReference1(), this.getPhysicalCard(), null, "newEReference1", null, 0, 1, Card.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(productsCardEClass, ProductsCard.class, "ProductsCard", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getProductsCard_Id(), ecorePackage.getEInt(), "id", null, 0, 1, ProductsCard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProductsCard_NewEReference1(), this.getProduct(), null, "newEReference1", null, 0, 1, ProductsCard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProductsCard_NewEReference2(), this.getCard(), null, "newEReference2", null, 0, 1, ProductsCard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProductsCard_NewEReference3(), this.getUser(), null, "newEReference3", null, 0, 1, ProductsCard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProductsCard_Date(), ecorePackage.getEDate(), "date", null, 0, 1, ProductsCard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

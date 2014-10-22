@@ -94,6 +94,33 @@ public interface ModelFactory extends EFactory {
 	ProductsPurchase createProductsPurchase();
 
 	/**
+	 * Returns a new object of class '<em>Physical Card</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Physical Card</em>'.
+	 * @generated
+	 */
+	PhysicalCard createPhysicalCard();
+
+	/**
+	 * Returns a new object of class '<em>Card</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Card</em>'.
+	 * @generated
+	 */
+	Card createCard();
+
+	/**
+	 * Returns a new object of class '<em>Products Card</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Products Card</em>'.
+	 * @generated
+	 */
+	ProductsCard createProductsCard();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
